@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 function ShortenerCard() {
   const [url, setUrl] = useState("");
   const [shortURL, setShortURL] = useState("");
@@ -9,7 +11,7 @@ function ShortenerCard() {
   const handleShorten = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8001/url",
+        `${BACKEND_URL}/url`,
         {
           url,
         }
@@ -18,7 +20,7 @@ function ShortenerCard() {
       setShortID(res.data.id);
 
       setShortURL(
-        `http://localhost:8001/${res.data.id}`
+        `${BACKEND_URL}/${res.data.id}`
       );
 
     } catch (error) {
@@ -28,7 +30,7 @@ function ShortenerCard() {
 
   const copyLink = () => {
   navigator.clipboard.writeText(shortID);
-  alert("ID copied 🎀");
+  alert("ID copied");
     };
 
   return (

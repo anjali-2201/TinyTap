@@ -15,8 +15,9 @@ connectToMongoDB(process.env.MONGO_URI)
     .then(() => console.log("MongoDB connected"))
     .catch((err) => console.log("MongoDB error:", err));
 
+app.use(cors())
 app.use(express.json());
-app.use(cors());
+;
 
 app.use("/url", urlRoute);
 
