@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #ffe4ee,
+    #fff5f8,
+    #ffd6e7
+  );
+
+  color: #5c3a4a;
+
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font-family: inherit;
+}

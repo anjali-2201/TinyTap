@@ -3,6 +3,9 @@ const connectToMongoDB = require("./connect.js");
 const urlRoute = require('./routes/url');
 const dotenv = require('dotenv');
 const URL = require('./models/url');
+const cors = require("cors");
+
+
 
 const app = express();
 dotenv.config();
@@ -13,6 +16,7 @@ connectToMongoDB(process.env.MONGO_URI)
     .catch((err) => console.log("MongoDB error:", err));
 
 app.use(express.json());
+app.use(cors());
 
 app.use("/url", urlRoute);
 
