@@ -12,12 +12,12 @@ html, body, #root {
 body {
   font-family: "Trebuchet MS", Arial, sans-serif;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     #ffe4ee,
     #fff5f8,
     #ffd6e7
-  );
+  ); */
 
   color: #5c3a4a;
 

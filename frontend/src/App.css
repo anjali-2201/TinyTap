@@ -8,8 +8,8 @@
 body {
   background: linear-gradient(
     135deg,
-    #f6e4eb,
-    #fff0f5
+    #ffffff,
+    #ffffff
   );
 
   min-height: 100vh;
@@ -29,7 +29,7 @@ body {
 
 .navbar h1 {
   font-size: 3rem;
-  color: #fb63af;
+  color: #3b3a3a;
   font-weight: bold;
 }
 
@@ -41,29 +41,17 @@ body {
 
   padding: 35px;
 
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  );
+  border: 2px solid #000000;
 
-  border: 2px solid #ffc0cb;
+  border-radius: 20px;
 
-  border-radius: 25px;
-
-  box-shadow: 0 10px 30px rgba(
-    214,
-    51,
-    132,
-    0.15
-  );
+  /* box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15); */
 
   text-align: center;
 }
 
 .card h2 {
-  color: #ea5ba2;
+  color: #353434;
   margin-bottom: 20px;
 }
 
@@ -73,7 +61,7 @@ input {
   width: 100%;
   padding: 14px 18px;
 
-  border: 2px solid #ffc0cb;
+  border: 2px solid #515050;
 
   border-radius: 20px;
 
@@ -85,13 +73,13 @@ input {
 }
 
 input:focus {
-  border-color: #ff69b4;
+  border-color: #7b797a;
 }
 
 /* Buttons */
 
 button {
-  background: #fa81be;
+  background: #3b3b3b;
 
   color: white;
 
@@ -99,7 +87,7 @@ button {
 
   padding: 12px 28px;
 
-  border-radius: 20px;
+  border-radius: 15px;
 
   cursor: pointer;
 
@@ -122,11 +110,11 @@ button:hover {
 
 .result p {
   margin: 10px 0;
-  color: #8b3a62;
+  color: #3d3c3c;
 }
 
 a {
-  color: #d63384;
+  color: #2b2a2b;
   font-weight: bold;
   text-decoration: none;
 }
@@ -149,7 +137,7 @@ a:hover {
 }
 
 .result a {
-  color: #d63384;
+  color: #514f50;
   font-weight: bold;
   text-decoration: none;
 }
