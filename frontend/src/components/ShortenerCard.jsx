@@ -9,24 +9,31 @@ function ShortenerCard() {
   const [shortID, setShortID] = useState("");
 
   const handleShorten = async () => {
-    try {
-      const res = await axios.post(
-        `${BACKEND_URL}/url`,
-        {
-          url,
-        }
-      );
+  // Clear old result first
+  setShortURL("");
+  setShortID("");
 
-      setShortID(res.data.id);
+  try {
+    const res = await axios.post(
+      `${BACKEND_URL}/url`,
+      {
+        url,
+      }
+    );
 
-      setShortURL(
-        `${BACKEND_URL}/${res.data.id}`
-      );
+    setShortID(res.data.id);
 
-    } catch (error) {
-      console.log(error);
-    }
-  };
+    setShortURL(
+      `${BACKEND_URL}/${res.data.id}`
+    );
+
+  } catch (error) {
+    alert(
+      error.response?.data?.error
+    );
+  }
+};
+
 
   const copyLink = () => {
   navigator.clipboard.writeText(shortID);
