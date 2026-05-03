@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, sans-serif;
 }
 
 body {
   background: linear-gradient(
     135deg,
-    #ffd9e8,
+    #f6e4eb,
     #fff0f5
   );
 
@@ -29,14 +29,8 @@ body {
 
 .navbar h1 {
   font-size: 3rem;
-  color: #d63384;
+  color: #fb63af;
   font-weight: bold;
-}
-
-.navbar p {
-  color: #9d4f70;
-  margin-top: 8px;
-  font-size: 1rem;
 }
 
 /* Cards */
@@ -54,9 +48,9 @@ body {
     0.8
   );
 
-  border: 3px solid #ffc0cb;
+  border: 2px solid #ffc0cb;
 
-  border-radius: 30px;
+  border-radius: 25px;
 
   box-shadow: 0 10px 30px rgba(
     214,
@@ -69,7 +63,7 @@ body {
 }
 
 .card h2 {
-  color: #d63384;
+  color: #ea5ba2;
   margin-bottom: 20px;
 }
 
@@ -97,7 +91,7 @@ input:focus {
 /* Buttons */
 
 button {
-  background: #ff69b4;
+  background: #fa81be;
 
   color: white;
 
